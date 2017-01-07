@@ -1,3 +1,14 @@
+#back{
+
+	top:0px;
+  width: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  background-image: url("background.png");
+  min-height: 440px;
+}
+
 body {
     background-color: lightblue;
 	background-position: top center;
@@ -5,6 +16,12 @@ body {
 
   background-image: url("images/background.png");
 
+}
+
+.game{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
 }
 
 .row {
