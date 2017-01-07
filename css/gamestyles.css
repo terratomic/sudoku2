@@ -5,20 +5,24 @@
   background-position: top center;
   background-repeat: no-repeat;
 
-  background-image: url("background.png");
-  min-height: 440px;
+  background-image: url("images/headerNew.png");
+  min-height: 240px;
 }
 
 body {
-    background-color: lightblue;
-	background-position: top center;
+
+top:0;
+left:0;
+margin:0;
+padding:0;
+background-position: top center;
   background-repeat: no-repeat;
 
-  background-image: url("images/background.png");
+  background-image: url("images/wood.png");
 
 }
 
-.game{
+.everything{
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0%);
