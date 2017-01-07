@@ -27,7 +27,6 @@ background-position: top center;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
-
 .row {
     margin: 0px 0px 0px 0px;
     width: auto;
@@ -45,7 +44,7 @@ background-position: top center;
     height: 50px;
     width: 50px;
     color: black;
-    background-color: #ffffff;
+    background-color: #FFF1D0;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     text-align: center;
@@ -58,7 +57,11 @@ background-position: top center;
     font-size:   250%;
 }
 
-
+#buttons{
+	position: absolute;
+	left:50%;
+	transform: translate(-50%,0%);
+}
 .editable {
     height: 50px;
     width: 50px;
