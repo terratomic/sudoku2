@@ -1,6 +1,10 @@
 html {
-//    background: url('http://subtlepatterns.com/patterns/wood_pattern.png');
+
     background-color: lightblue;
+    background-position: top center;
+  background-repeat: no-repeat;
+
+  background-image: url("background.png");
     font-size: 10pt;
 }
 label {
