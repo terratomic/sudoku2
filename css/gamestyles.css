@@ -55,6 +55,19 @@ background-position: top center;
     border-width: 2px;
     line-height: 50px;
     font-size:   250%;
+	font-family:Calibri, sans-serif;
+}
+
+.button{
+	border-style:none;
+	font-family: Calibri, sans-serif;
+	font-size: 20px;
+	color: #FFF1D0;
+    background-color: #086788;
+}
+
+.button:hover{
+	background-color:#06AED5;
 }
 
 #buttons{
@@ -65,9 +78,10 @@ background-position: top center;
 .editable {
     height: 50px;
     width: 50px;
-    color: red;
+    color: #086788;
     border-color: black;
-    background-color: #ffffff;
+  /*  background-color: #ffffff; */
+    background-color: #FFF1D0;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     text-align: center;
@@ -78,20 +92,23 @@ background-position: top center;
     border-width: 2px;
     line-height: 50px;
     font-size:   250%;
+	font-family:Calibri, sans-serif;
 }
 
 .editablehighlight {
     height: 50px;
     width: 50px;
-    color: red;
+    color: #DD1C1A;
     border-color: black;
-    background-color: yellow;
+	background-color: #FFF1D0;
+/*    background-color: #F0C808; */
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     text-align: center;
     vertical-align: middle;
     font-weight:bold;
     border-style: solid;
+	font-family:Calibri, sans-serif;
     display: inline-block;
     border-width: 2px;
     line-height: 50px;

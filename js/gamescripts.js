@@ -41,7 +41,7 @@ function setSolutionSquare(div, value){
 
 function setIncorrect(div,value){
     if(div.hasAttribute("contentEditable" )&& div.getAttribute("contentEditable")=="true")
-        if(div.innerHTML!=value)
+        if(div.innerHTML!=value && div.innerHTML!='')
             div.className ="editablehighlight";
         else 
             div.className = "editable";

@@ -3,10 +3,12 @@
 <html>
 <head>
 
-    <title>HTML Tables</title>
+    <title>SuDoKu</title>
     <link rel="stylesheet" type="text/css" href="../css/gamestyles.css">
     <script type="text/javascript" src="../js/gamescripts.js"></script>
-    <script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+
 </head>
 
 <body>
@@ -485,9 +487,9 @@
 <br>
 
 <div id = "buttons">
-<button type = "button" id = "newGame">New</button>
-<button type="button" id="checkGame">Check</button>
-<button type = "button" id = "solveGame">Solve</button>
+<button type = "button" id = "newGame" class = "button">New</button>
+<button type="button" id="checkGame" class = "button">Check</button>
+<button type = "button" id = "solveGame" class = "button">Solve</button>
 </div>
 <!--
 <button type="button" id="logoutBtn" onclick= "window.location.href = '/logout';">Logout </button>
@@ -501,11 +503,11 @@
     $(document).ready(function(){
 
         var obj;
-
+	
 
 
         $("#newGame").click(function(){
-            $.ajax({url: "/api/game", success: function(result){
+            $.ajax({url: "../api/game", success: function(result){
                 obj = result;
                 set(document, result,"setSquare");
                // console.log(JSON.stringify(obj));
@@ -513,24 +515,25 @@
         });
 
         $("#solveGame").click(function(){
-            $.ajax({url: "/api/game", method:"put", success: function(result){
+            $.ajax({url: "../api/game", method:"put", success: function(result){
                 obj = result;
                 set(document, result,"setSolutionSquare");
-                console.log(JSON.stringify(obj));
+          //     console.log(JSON.stringify(obj));
             }});
         });
 
         $("#checkGame").click(function(){
-            $.ajax({url: "/api/game", data:JSON.stringify(obj), method: "post",
+            $.ajax({url: "../api/game", data:JSON.stringify(obj), method: "post",
                 success: function(result){
-                    alert("Post was successful " + result.result);
+//                    alert("Post was successful " + result.result);
                     if(result.result!="true")
                             set(document,result,"setIncorrect");
                 },
                 error: function() {
-                    alert("Post was not successful");
+   //                 alert("Post was not successful");
                 }
             });
+		console.log("hi");
         });
 
 
